@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a [routerLink]="['/']" class="navbar-brand">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnh2_wsbr0VKQUJ_h8GgRBwOHYFkHZtDH7jttzliUqAEdYQZdFFEoAasanMtNaAWqqeA&usqp=CAU"
+        height="28"
+        alt="Transformers"
+      />
+    </a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <a [routerLink]="['/']" class="nav-item nav-link active">Dashboard</a>
+        <a [routerLink]="['/transformers']" class="nav-item nav-link"
+          >Profile</a
+        >
+        <a [routerLink]="['/transformers/add']" class="nav-item nav-link"
+          >Create</a
+        >
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a [routerLink]="['/']" class="nav-item nav-link">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
